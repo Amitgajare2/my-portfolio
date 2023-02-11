@@ -1,0 +1,62 @@
+/* footer */
+.dino-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: black;
+    width: 100%;
+}
+.footer{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    width: 60%;
+}
+
+.social-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+}
+
+.social-box i {
+    font-size: 30px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.social-box i:hover {
+    color: rgb(122, 255, 125);
+}
+
+@media screen and (max-width:700px) {
+
+    /* footer */
+    .dino-game img {
+        width: 100%;
+    }
+
+    .social-box i {
+        font-size: 20px;
+    }
+
+    .footer{
+        font-size: xx-small;
+    }
+
+    .footer b{
+        color: rgb(255, 238, 50);
+    }
+
+}

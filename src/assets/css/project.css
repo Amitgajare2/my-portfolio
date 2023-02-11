@@ -1,0 +1,157 @@
+
+.head-box h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cards{
+    margin: 10px;
+}
+
+.col-md-3{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-img{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.card-img img{
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.card-body{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-subtitle{
+    background-color: rgb(240, 61, 61);
+    color: #fff;
+    width: max-content;
+    padding: 10px 15px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.card-subtitle:hover{
+    background-color: black;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.card-title{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card-text{
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.buttom-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btn{
+    padding: 10px 20px ;
+    background-color: rgb(61, 61, 254);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: rgb(61, 61, 254);
+    border: 1px solid rgb(14, 14, 164);
+}
+
+@media screen and (max-width:700px) {
+    .col-md-3{
+        flex-direction: column;
+    }
+
+    .head-box h3{
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 30px;
+    }
+    
+    .cards{
+        margin: 10px;
+    }
+
+    .main-box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img, .card-body{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-img img{
+        width: 100%;
+        object-fit: cover;
+        border: 2px solid black;
+    }
+
+    .card-subtitle{
+        background-color: rgb(240, 61, 61);
+        color: #fff;
+        width: max-content;
+        padding: 8px 10px;
+        font-family: 'Anton', sans-serif;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 10px;
+    }
+
+    .card-title{
+        font-size: 1.5rem;
+    }
+
+    .card-text{
+        font-size: 0.6rem;
+    }
+}

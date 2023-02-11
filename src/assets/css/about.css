@@ -1,0 +1,176 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.boxm{
+    margin: 10px;
+    /* border: 2px solid black; */
+}
+
+.img-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.img-box h2{
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+
+.location , .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    
+}
+
+.res{
+    margin-top:20px;
+    margin-bottom:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box p{
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 8px;
+}
+
+.box-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Professional{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.Professional h2, .skill h2, .work h2{
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+
+.Professional p{
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 8px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.skill h2{
+    margin-bottom: 8px;
+}
+
+.skill ul{
+    font-size: 14px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.skill li::before{
+    content: "🛸";
+    display: inline-block;
+    padding-inline-end: 0.75rem;
+    transform: 200ms;
+}
+
+.skill li:hover::before{
+    transform: translateX(0.25rem);
+}
+
+.work{
+    width: 30%;
+}
+
+.work p{
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (max-width:700px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        /* border: 2px solid black; */
+        width: 100%;
+    }
+
+    .boxm{
+        overflow: hidden;
+    }
+
+    .Professional{
+        /* border: 2px solid black; */
+        margin: 0;
+    }
+
+    .Professional h2, .skill h2, .work h2{
+        margin-top: 20px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2rem;
+    }
+
+    .Professional p{
+        font-size: 12px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 8px;
+    }
+
+    .img-box img{
+        border-radius: 50%;
+        width: 40%;
+    }
+    .img-box h2{
+        margin-top: 10px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2rem;
+    }
+    
+    .img-box p{
+        font-size: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 2px;
+    }
+
+    .box-box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Professional, .skill, .work{
+        width: 100%;
+    }
+}
